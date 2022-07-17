@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 const app = express();
 dotenv.config();
+import 'express-async-errors';
 
 //db and authenticateUser
 import connectDB from './db/connect.js';
