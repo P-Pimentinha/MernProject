@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 import validator from 'validator';
-import isEmail from 'validator/lib/isEmail';
 
 const UserSchema = new mongoose.Schema({
   name: {
@@ -25,6 +24,12 @@ const UserSchema = new mongoose.Schema({
     minlength: 6,
   },
   lastName: {
+    type: String,
+    maxlength: 20,
+    trim: true,
+    default: 'unknown',
+  },
+  location: {
     type: String,
     maxlength: 20,
     trim: true,
