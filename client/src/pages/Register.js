@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Logo, Form, Alert } from '../components';
 import Wrapper from '../assets/wrappers/RegisterPage';
 import { useAppContext } from '../context/appContext';
-import axios from 'axios';
 
 const initialState = {
   name: '',
